@@ -1,0 +1,20 @@
+.accordion {border: 1px solid grey;}
+.accordion > input {display: none;}
+.accordion > label {
+    display: block;
+    color: white;
+    background-color: grey;
+    margin: 1px;
+    padding: 3px;
+    cursor: pointer;
+}
+.accordion > nav {
+    display: none;
+    padding: 3px;
+}
+.accordion > nav > a {
+    display: block;
+    margin: 5px;
+}
+.accordion> input:checked ~ nav {display: block;}
+.accordion {width: 6.2cm;}

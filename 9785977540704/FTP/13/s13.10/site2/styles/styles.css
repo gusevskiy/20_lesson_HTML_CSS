@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+    counter-reset: ph_links;
+}
+.gallery-item img {width: 100%;}
+body.noscroll {overflow: hidden;}
+a[target=gallery] {font-size: 16pt;}
+a[target=gallery]::before {
+    counter-increment: ph_links;
+    content: counter(ph_links) ". ";
+}

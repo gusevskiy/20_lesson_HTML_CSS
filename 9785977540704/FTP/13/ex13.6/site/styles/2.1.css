@@ -1,0 +1,90 @@
+﻿@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+body {font-family: Arial;}
+h1 {
+    font-size: 32pt;
+    font-family: Verdana;
+}
+p {font-size: 14pt !important;}
+p.greeting {font-size: 24pt;}
+.picture img {width: 67%;}
+h1 em {font-weight: normal;}
+.advertising {margin-left: 30pt;}
+header {text-align: center;}
+main {text-align: justify;}
+footer {text-align: right;}
+.advertising div {
+    font-size: 12pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+.bigger {font-size: 16pt;}
+table.pricelist th, table.pricelist td {
+    border: grey thin solid;
+    padding: 4px;
+}
+table.catalog {border-collapse: collapse;}
+table.catalog td {
+    border-top: black thin dotted;
+    border-bottom: black thin dotted;
+    padding: 10px;
+}
+table.catalog img {width: 200px;}
+table.pricelist thead th {
+    color: white;
+    background-color: grey;
+}
+table.pricelist tfoot td {
+    text-align: right;
+    font-style: italic;
+}
+nav {
+    float: left;
+    width: 150px;
+    margin: 10px 30px 10px 0px;
+    padding: 10px;
+    border: black medium double;
+    border-radius: 10px;
+}
+nav div {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.catalog tr:first-child td {
+    border-top: none;
+}
+table.catalog tr:last-child td {
+    border-bottom: none;
+}
+table.catalog td p:first-of-type::first-letter {
+    font-size: 24pt;
+}
+table.pricelist tbody th[colspan] {text-align: center;}
+table.pricelist tbody td:last-child:not(:only-child) {
+    border: none;
+    background-color: lightgrey;
+}
+table.catalog h3 {
+    font-family: "Caviar Dreams";
+    font-size: 20pt;
+}
+table.catalog h3::after {content: ":";}

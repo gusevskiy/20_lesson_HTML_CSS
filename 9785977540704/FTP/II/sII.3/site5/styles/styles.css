@@ -1,0 +1,86 @@
+﻿body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+header, article, footer {
+    box-sizing: border-box;
+    height: 100vh;
+    border: 10px solid darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1, h2 {
+    font-family: Verdana, sans-serif;
+    margin: 0pt;
+}
+header h1:first-of-type {
+    font-size: 30pt;
+    text-align: right;
+}
+header h1:last-of-type {
+    font-size: 64pt;
+    font-variant: small-caps;
+    letter-spacing: 8pt;
+    margin-bottom: 12pt;
+    text-align: center;
+}
+header aside {
+    width: 40%;
+    float: left;
+}
+header address {
+    font-size: 28pt;
+    text-align: right;
+    margin: 12pt 8pt;
+}
+article h2 {
+    font-size: 26pt;
+    margin-left: 10%;
+    margin-bottom: 4pt;
+}
+article table {
+    width: 80%;
+    margin: 0px auto;
+}
+article table td {padding: 6pt;}
+article img {height: 30%;}
+article h3 {
+    font-size: 20pt;
+    margin-bottom: 4pt;
+}
+article p {font-size: 16pt;}
+article p.price {
+    font-weight: bold;
+    text-align: right;
+}
+footer h1 {
+    font-size: 64pt;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+nav {
+    position: absolute;
+    left: 0pt;
+    top: 0pt;
+    right: 0pt;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+nav div, nav a {
+    display: block;
+    font-size: 20pt;
+    padding: 10pt;
+    background-color: bisque;
+}
+nav a:link, nav a:visited {
+    color: blue;
+    text-decoration: none;
+}
+nav a:active, nav a:hover {
+    color: red;
+    text-decoration: none;
+}

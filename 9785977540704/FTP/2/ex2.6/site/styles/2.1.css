@@ -1,0 +1,12 @@
+﻿body {font-family: Arial;}
+h1 {
+    font-size: 32pt;
+    text-align: center;
+}
+p {
+    font-size: 14pt;
+    text-align: justify;
+}
+.picture {text-align: center;}
+p.greeting {font-size: 24pt;}
+.picture img {width: 67%;}

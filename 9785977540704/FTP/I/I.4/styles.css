@@ -1,0 +1,21 @@
+.spoiler {border: 1px solid grey;}
+.spoiler > input {display: none;}
+.spoiler > label {
+    display: block;
+    color: white;
+    background-color: grey;
+    margin: 1px;
+    padding: 3px;
+    cursor: pointer;
+}
+.spoiler > div {
+    display: none;
+    padding: 3px;
+}
+.spoiler > label > span {font-family: monospace;}
+.spoiler > label > span:before {content: "[+] ";}
+.spoiler > input:checked ~ div {display: block;}
+.spoiler > input:checked ~ label > span:before {
+    content: "[-] ";
+}
+.spoiler {width: 6.2cm;}

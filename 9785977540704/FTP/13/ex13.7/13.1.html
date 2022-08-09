@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Книга</title>
+        <style type="text/css">
+            body {counter-reset: ch1;}
+            h1::before {
+                counter-increment: ch1;
+                content: counter(ch1) ". ";
+            }
+            h1 {counter-reset: ch2;}
+            h2::before {
+                counter-increment: ch2;
+                content: counter(ch1) "." counter(ch2) ". ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML</h1>
+        <h2>Создаем нашу первую веб-страницу</h2>
+        <h2>Теги. Язык HTML</h2>
+        <h2>Продолжаем изучать теги</h2>
+        <h2>Помещаем на веб-страницу изображения</h2>
+        <h1>CSS</h1>
+        <h2>Оформление по умолчанию</h2>
+        <h2>Задаем оформление для веб-страницы</h2>
+        <h2>Таблицы стилей</h2>
+        <h1>Как работает WWW</h1>
+        <h2>Клиенты и серверы</h2>
+        <h2>Публикуем наш веб-сайт на веб-сервере</h2>
+    </body>
+</html>

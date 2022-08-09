@@ -1,0 +1,27 @@
+.polar {
+    width: 182px;
+    height: 182px;
+    border: 1px solid grey;
+    position: relative;
+}
+.polar img {
+    display: block;
+    width: 100%;
+}
+.polar div {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.polar {margin: 10px;}
+.polar:nth-child(n+1) {transform: rotate(-5deg);}
+.polar:nth-child(2n+1) {transform: rotate(10deg);}
+.polar:nth-child(3n+1) {transform: rotate(-15deg);}

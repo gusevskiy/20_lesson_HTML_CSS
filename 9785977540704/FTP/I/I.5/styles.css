@@ -1,0 +1,33 @@
+div.hamburger {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: url(hamburger_button.png) center/contain no-repeat;
+    border: 1px solid grey;
+}
+div.hamburger > input {display: none;}
+div.hamburger > label {
+    display: block;
+    width: 38px;
+    height: 38px;
+    padding: 0px;
+    cursor: pointer;
+}
+div.hamburger > nav {
+    display: none;
+    background-color: white;
+    border: 1px solid grey;
+    position: relative;
+    left: -1px;
+    top: 2px;
+}
+div.hamburger > nav > a {
+    display: block;
+    margin: 5px;
+}
+div.hamburger > input:checked ~ nav {
+    display: inline-block;
+}
+h1 {margin-left: 100px;}

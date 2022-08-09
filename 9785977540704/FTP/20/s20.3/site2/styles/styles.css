@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    counter-reset: ph_links;
+    background-image: url(../images/bg3.jpg), url(../images/bg2.jpg), url(../images/bg1.jpg), url(../images/main_bg.jpg);
+    background-size: 60pt, 60pt, 60pt, cover;
+    background-attachment: fixed;
+    background-position: 10pt 144pt, 10pt 76pt, 10pt 8pt, center;
+    background-repeat: no-repeat;
+}
+.gallery-item img {width: 100%;}
+body.noscroll {overflow: hidden;}
+a[target=gallery] {font-size: 16pt;}
+a[target=gallery]::before {
+    counter-increment: ph_links;
+    content: counter(ph_links) ". ";
+}
+header h1 {
+    font: bold 42pt Verdana, sans-serif;
+    text-align: right;
+    color: white;
+    margin-top: 8pt;
+    margin-right: 8pt;
+    margin-left: 80pt;
+    padding-right: 12pt;
+    background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black);
+}
+main p {font: 12pt Arial, sans-serif;}
+main {
+    margin-left: 80pt;
+    padding-left: 20pt;
+    padding-right: 10pt;
+    border-left-width: 20pt;
+    border-left-style: solid;
+    border-left-color: grey;
+}
+div.tbl {display: table;}
+div.tbl > div {display:table-row;}
+div.tbl > div > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+div.tbl a {
+    display: block;
+    margin: 10px 10px 10px 0px;
+}

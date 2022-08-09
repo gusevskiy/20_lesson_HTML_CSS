@@ -48,3 +48,9 @@ footer {
 .bigger {
     font-size: 16pt;
 }
+
+table.pricelist th,
+table.pricelist td {
+    border: grey thin solid;
+    padding: 4px;
+}

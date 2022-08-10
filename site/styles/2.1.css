@@ -82,3 +82,9 @@ nav{
     border: black medium double;
     border-radius: 10px;
 }
+
+nav div{
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

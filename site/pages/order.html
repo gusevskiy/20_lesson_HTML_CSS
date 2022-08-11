@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Суши-бар
+    Йокогама. Сашими, суши, роллы, напитки">
+    <meta name="keywords" content="суши-бар, Йокогама, сашими, суши, ролл">
+    <meta name="author" content="Читатель">
+    <meta name="generator" content="Visual Studio Code">
     <title>Прайс-лист :: Йокогама: суши-бар</title>
     <link href="../styles/2.1.css" rel="stylesheet" type="text/css">
 </head>
@@ -32,18 +37,21 @@
                 <br>
                 <input type="time" name="time" id="time" required>
             </p>
-            <p>
-                <label for="cnt" id="cnt">На сколько человек заказывать столик</label>
-                <br>
-                <input type="radio" name="cnt" id="cnt" value="1"> 1&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="cnt" value="2"> 2&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="cnt" value="more"> 3 и более
-            </p>
-            <p>
-                <input type="checkbox" name="children" value="*">
-                Среди клиентов будут дети
-            </p>
-            <p><input type="submit"></p>
+            <fieldset>
+                <legend>Укажите сведения о Вас и Вашей компании</legend>
+                <p>
+                    <label for="cnt" id="cnt">На сколько человек заказывать столик</label>
+                    <br>
+                    <input type="radio" name="cnt" id="cnt" value="1"> 1&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cnt" value="2"> 2&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cnt" value="more"> 3 и более
+                </p>
+                <p>
+                    <input type="checkbox" name="children" value="*">
+                    Среди клиентов будут дети
+                </p>
+            </fieldset>
+            <p><input type="image" src="/site/images/order_button.jpg"></p>
         </form>
     </main>
     <footer>

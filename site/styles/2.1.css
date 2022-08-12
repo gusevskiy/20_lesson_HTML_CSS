@@ -1,3 +1,26 @@
+/* сделает доступным веб­
+обозревателю) загружаемый шрифт Caviar Dreams: */
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar-Dreams/CaviarDreams.ttf)
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url( ../fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url( ../fonts/Caviar-Dreams/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url( ../fonts/Caviar-Dreams/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     font-family: Arial;
 }
@@ -116,4 +139,13 @@ nav div{
     font-size: 20pt;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+table.catalog h3{
+    font-family: "Caviar Dreams";
+    font-size: 20pt;
+}
+/* двоеточие ":" */
+table.catalog h3::after {
+    content: ":";
 }

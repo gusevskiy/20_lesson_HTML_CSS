@@ -81,6 +81,27 @@ table.catalog tr:first-child td {
 table.catalog tr:last-child td {
     border-bottom: none;
 }
+/*удаление рамки pricelist.html */
+/* цвет фона pricelist.html*/
+
+table.pricelist tbody td:last-child:not(:only-child) {
+    border: none;
+    background-color: lightgrey;
+}
+
+/* задали размер первой букве описания */
+table.catalog td p:first-of-type::first-letter {
+    font-size: 24pt;
+}
+/* названия по центру */
+table.pricelist tbody th[colspan] {
+    text-align: center;
+}
+
+/* для текста "Всего 8 наименований"*/
+table.pricelist tfoot td {
+    text-align: right;
+}
 
 nav{
     float: left;

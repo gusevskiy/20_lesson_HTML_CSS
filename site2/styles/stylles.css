@@ -9,3 +9,7 @@ body {
 body.noscroll {
     overflow: hidden;
 }
+
+a [target=gallery] {
+    font-size: 25px;
+}

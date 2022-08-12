@@ -73,6 +73,14 @@ table.pricelist thead th{
     color: white;
     background-color: grey;
 }
+/* убрали линию перед первой позицией */
+table.catalog tr:first-child td {
+    border-top: none;
+}
+/* убрали линию после последней позиции */
+table.catalog tr:last-child td {
+    border-bottom: none;
+}
 
 nav{
     float: left;

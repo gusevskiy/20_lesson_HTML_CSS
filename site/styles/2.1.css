@@ -28,6 +28,7 @@ body {
 h1 {
     font-size: 32pt;
     font-family: Verdana;
+    text-shadow: 3pt 3pt 5pt darkgrey;
 }
 
 p {

@@ -18,7 +18,7 @@ body {
     counter-reset: ch1;
 }
 /* вывести счетчик на экран */
-p::before {
+table p::before {
     counter-increment: ch1;
     content: counter(ch1) ".";
 }
@@ -30,5 +30,15 @@ header h1 {
     background-color: black;
     margin-top: 8pt;
     margin-right: 8pt;
-    margin-left: 8pt;
+    margin-left: 80pt;
+    padding-right: 12pt;
+}
+
+main{
+    margin-left: 80pt;
+    padding-left: 20pt;
+    padding-right: 10pt;
+    border-left-width: 20pt;
+    border-left-style: solid;
+    border-left-color: grey;
 }

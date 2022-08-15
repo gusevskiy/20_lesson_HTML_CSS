@@ -107,15 +107,16 @@ table.catalog tr:last-child td {
 }
 /*удаление рамки pricelist.html */
 /* цвет фона pricelist.html*/
-
 table.pricelist tbody td:last-child:not(:only-child) {
     border: none;
     background-color: lightgrey;
 }
 
-/* задали размер первой букве описания */
+/* задали размер первой букве описания 
+и сместил ее в низ */
 table.catalog td p:first-of-type::first-letter {
     font-size: 24pt;
+    vertical-align: top;
 }
 /* названия по центру */
 table.pricelist tbody th[colspan] {
@@ -141,13 +142,17 @@ nav div{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+/* шрифт названий */
 table.catalog h3{
     font-family: "Caviar Dreams";
     font-size: 20pt;
 }
-/* двоеточие ":" */
+/* двоеточие ":" Кунсей батакон*/
 table.catalog h3::after {
     content: ":";
+}
+/* все слова в названиях с заглавной буквы */
+table.catalog h3{
+    text-transform: capitalize;
 }
 

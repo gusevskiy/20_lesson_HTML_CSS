@@ -13,3 +13,22 @@ body.noscroll {
 a [target=gallery] {
     font-size: 25px;
 }
+/* создать счетчик */
+body {
+    counter-reset: ch1;
+}
+/* вывести счетчик на экран */
+p::before {
+    counter-increment: ch1;
+    content: counter(ch1) ".";
+}
+
+header h1 {
+    font: bold 42pt Verdana, sans-serif;
+    text-align: right;
+    color: white;
+    background-color: black;
+    margin-top: 8pt;
+    margin-right: 8pt;
+    margin-left: 8pt;
+}

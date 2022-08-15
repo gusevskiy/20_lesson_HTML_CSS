@@ -164,3 +164,13 @@ table.catalog h3::after {content: ":";}
 
 ol {    list-style-type: upper-roman;}
 table.catalog td:first-child {width: 50%;}
+
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:active, nav a:hover {
+    color: darksalmon;
+    text-decoration: none;
+}

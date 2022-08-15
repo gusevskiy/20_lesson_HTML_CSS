@@ -63,6 +63,11 @@ main {
 
 footer {
     text-align: right;
+    /* рамка */
+    border-top: 2pt dashed lightgrey; /*линия*/
+    width: 50%;
+    min-width: 300px;
+    margin-left: 50%;/*просвет слева*/
 }
 
 .advertising div {
@@ -135,9 +140,7 @@ nav{
     width: 150px;
     margin: 10px 30px 10px 0px;
     padding: 10px;
-    border: black medium double;
-    border-radius: 10px;
-    box-shadow: 4px 4px 1px 1px darkgrey;
+    box-shadow: 0px 0px 5px 5px darkgrey, 0px 0px 5px 5px darkgrey inset;
 }
 
 nav div{

@@ -23,6 +23,7 @@
 
 body {
     font-family: Arial;
+
 }
 
 h1 {
@@ -97,7 +98,7 @@ table.catalog td{
 }
 
 table.catalog img {
-    width: 200px;
+    width: 100%;
 }
 
 table.pricelist thead th{
@@ -133,6 +134,7 @@ table.pricelist tbody th[colspan] {
 /* для текста "Всего 8 наименований"*/
 table.pricelist tfoot td {
     text-align: right;
+    font-size: italic;
 }
 
 nav{
@@ -152,13 +154,13 @@ nav div{
 table.catalog h3{
     font-family: "Caviar Dreams";
     font-size: 20pt;
+    font-variant: small-caps;
+    /* все слова в названиях с заглавной буквы */
+    text-transform: capitalize;
+    letter-spacing: 2pt;
 }
 /* двоеточие ":" Кунсей батакон*/
-table.catalog h3::after {
-    content: ":";
-}
-/* все слова в названиях с заглавной буквы */
-table.catalog h3{
-    text-transform: capitalize;
-}
+table.catalog h3::after {content: ":";}
 
+ol {    list-style-type: upper-roman;}
+table.catalog td:first-child {width: 50%;}

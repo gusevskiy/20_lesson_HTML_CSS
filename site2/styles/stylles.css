@@ -13,8 +13,11 @@ body.noscroll {
 a [target=gallery] {
     font-size: 25px;
 }
-/* создать счетчик */
 body {
+    background-image: url(/site2/images/main_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* создать счетчик */
     counter-reset: ch1;
 }
 /* вывести счетчик на экран */
@@ -27,11 +30,12 @@ header h1 {
     font: bold 42pt Verdana, sans-serif;
     text-align: right;
     color: white;
-    background-color: black;
+    /* background-color: black; */
     margin-top: 8pt;
     margin-right: 8pt;
     margin-left: 80pt;
     padding-right: 12pt;
+    background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black)
 }
 
 main{

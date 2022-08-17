@@ -146,7 +146,7 @@ nav{
     box-shadow: 0px 0px 5px 5px darkgrey, 0px 0px 5px 5px darkgrey inset;
 }
 
-nav div{
+nav div, nav a{
     font-size: 20pt;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -199,3 +199,5 @@ input:invalid {
     background-color: red;
     border-color: red;
 }
+
+nav a {display: block;}

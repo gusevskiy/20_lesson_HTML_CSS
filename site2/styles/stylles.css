@@ -1,5 +1,16 @@
 body {
     margin: 0px;
+    counter-reset: ph_links;
+    background-image: url(/site2/images/bg3.jpg),
+        url(/site2/images/bg2.jpg),
+        url(/site2/images/bg1.jpg),
+        url(/site2/images/main_bg.jpg);
+    background-size: 60pt, 60pt, 60pt, cover;
+    background-attachment: fixed;
+    background-position: 10pt 144pt, 10pt 76pt, 10pt 8pt, center;
+    background-repeat: no-repeat;
+    /* создать счетчик */
+    counter-reset: ch1;
 }
 
 .gallery-item img {
@@ -13,13 +24,7 @@ body.noscroll {
 a [target=gallery] {
     font-size: 25px;
 }
-body {
-    background-image: url(/site2/images/main_bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    /* создать счетчик */
-    counter-reset: ch1;
-}
+
 /* вывести счетчик на экран */
 table p::before {
     counter-increment: ch1;
@@ -38,11 +43,26 @@ header h1 {
     background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black)
 }
 
-main{
+main {
     margin-left: 80pt;
     padding-left: 20pt;
     padding-right: 10pt;
     border-left-width: 20pt;
     border-left-style: solid;
     border-left-color: grey;
+}
+
+div.tbl {display: table;}
+
+div.tbl > div {
+    display: table-row;
+}
+
+div.tbl > div > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+div.tbl a {
+    display: block;
+    margin: 10px 10px 10px 0px;
 }

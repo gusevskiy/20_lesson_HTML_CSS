@@ -66,3 +66,41 @@ div.tbl a {
     display: block;
     margin: 10px 10px 10px 0px;
 }
+
+aside {/*плавающий элемент страницы*/
+    float: right;
+    margin: 20px 0px 20px 20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+nav {
+    margin: 10px 10px 10px 105px;
+    padding: 5px;
+    border: 4px solid grey;
+    font: 16pt Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {display: block;}
+nav a:link, nav a:visited {
+    color: blue;
+    text-decoration: none;
+}
+nav div {
+    color: white;
+    background-color: grey;
+}
+div#discography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div#discography > div {
+    width: 120px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}

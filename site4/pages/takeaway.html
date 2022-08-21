@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Суши-бар
+    Йокогама. Сашими, суши, роллы, напитки">
+    <meta name="keywords" content="суши-бар, Йокогама, сашими, суши, ролл">
+    <meta name="author" content="Читатель">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Прайс-лист :: Йокогама: суши-бар</title>
+    <link href="../styles/2.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>суши-бар<em>&laquo;Йокогама&raquo;</em></h1>
+    </header>
+    <main>
+        <caption>Заказ столиков</caption>
+        <form action="mailto:vlgu@mail.ru" method="post" enctype="text/plain">
+            <p>
+                <label for="dishes">Что желаете заказать</label>
+                <br>
+                <select name="dishes" id="dishes" size="6" multiple>
+                    <optgroup label="Сашими">
+                        <option value="unagi">Унаги</option>
+                        <option value="hamachi">Хамачи</option>
+                    </optgroup>
+                    <optgroup label="Суши">
+                        <option value="chukka">Чукка</option>
+                        <option value="maguro">Магуро</option>
+                        <option value="tobiko">Тобико</option>
+                    </optgroup>
+                    <optgroup label="Роллы">
+                        <option value="kunsei_batakon">Кунсей батакон</option>
+                        <option value="arigato">Аригато</option>
+                        <option value="mexican">Мексиканский</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="phone">По какому телефону Вам перезвонить?</label>
+                <br>
+                <input type="text" name="phone" id="phone" required>
+            </p>
+            <p><input type="submit"></p>
+        </form>
+    </main>
+    <footer>
+        <div class="pos4">
+            <p class="greeting">Ждем вас!</p>
+            <address>Наш адрес:<br>ул. Зеленая, 17.</address>
+            <p>читатели книги &laquo;HTML и CSS&raquo;.<br>Все права защищены</p>
+        </div>
+        <div class="pos5">
+            <p><a href="pages/order.html">Закажите столик</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

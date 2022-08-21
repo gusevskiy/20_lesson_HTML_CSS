@@ -66,7 +66,6 @@ main {
     overflow: auto;
     padding-left: 10px;
     padding-right: 10px;
-    overflow: auto;
 }
 
 footer {
@@ -119,7 +118,7 @@ table.pricelist tfoot td {
     font-style: italic;
 }
 nav {
-    width: 180px;
+    width: 150px;
     padding: 10px;
     left: 0pt;
     top: 100pt;

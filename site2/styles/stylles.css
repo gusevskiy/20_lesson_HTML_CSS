@@ -1,8 +1,7 @@
 body {
     margin: 0px;
     counter-reset: ph_links;
-    background-image: url(/site2/images/bg3.jpg), url(/site2/images/bg2.jpg),
-        url(/site2/images/bg1.jpg), url(/site2/images/main_bg.jpg);
+    background-image: url(../images/bg3.jpg), url(../images/bg2.jpg), url(../images/bg1.jpg), url(../images/main_bg.jpg);
     background-size: 60pt, 60pt, 60pt, cover;
     background-attachment: fixed;
     background-position: 10pt 144pt, 10pt 76pt, 10pt 8pt, center;
@@ -74,11 +73,6 @@ nav a:active, nav a:hover {
     text-decoration: none;
     transform: scale(1.2, 1.2) translateY(4px);
     transition-duration: 0.5s;
-    /* transition-property: transform, color, background-color;
-    transition-duration: 0.5s, 0.2s, 0.2s;
-    transition-delay: 0s, 0.3s, 0.3s;
-    transition-timing-function: linear, ease, ease; */
-    transition: transform 0.5s linear 0s, color 0.2s ease 0.3s, background-color 0.2s ease 0.3s;
 }
 nav div {
     color: white;
@@ -96,8 +90,12 @@ div#discography > div {
     text-align: center;
     width: 120px;
     transform: rotate(5deg);
+    transition: 0.2s linear;
 }
-div#discography > div:hover {transform: rotate(-5deg) translateY(-10px);}
+div#discography > div:hover {
+    transform: rotate(-5deg) translateY(-10px);
+    transition: 0.1s linear;
+}
 footer {
     margin-left: 120pt;
     margin-right: 10pt;
@@ -108,4 +106,39 @@ footer p {
     background-color: grey;
     text-align: right;
     margin-bottom: 0px;
+}
+@media screen and (max-width: 400px) {
+    body {background: transparent;}
+    header h1, nav, main, footer {margin-left: 8pt;}
+    header h1 {
+        font-size: 28pt;
+        background: black;
+    }
+    nav {flex-direction: column;}
+    main {
+        padding-left: 0pt;
+        border-left: none;
+    }
+    nav a:active, nav a:hover {
+        transform: translateY(4px);
+    }
+    div#discography > div {border: 1px solid black;}
+    iframe {width: 100%;}
+    div.tbl, div.tbl > div, div.tbl > div > * {
+        display: block;
+    }
+}
+@media print {
+    body {background: transparent;}
+    nav {display: none;}
+    header h1, main, footer {margin-left: 8pt;}
+    header, footer {background: transparent;}
+    main {
+        padding-left: 0pt;
+        border-left: none;
+    }
+    header h1, footer p {color: black;}
+    header h1 {letter-spacing: 10pt;}
+    footer {border-top: 1px solid black;}
+    div#discography > div {border: 1px solid black;}
 }
